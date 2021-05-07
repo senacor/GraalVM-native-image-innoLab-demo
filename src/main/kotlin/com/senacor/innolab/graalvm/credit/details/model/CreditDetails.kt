@@ -1,9 +1,11 @@
 package com.senacor.innolab.graalvm.credit.details.model
 
+import io.micronaut.core.annotation.Introspected
 import com.fasterxml.jackson.annotation.JsonFormat
 import java.math.BigDecimal
 import java.time.LocalDate
 
+@Introspected
 class CreditDetails(
 
     var id: String,
