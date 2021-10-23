@@ -1,0 +1,11 @@
+curl -v \
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data @src/test/resources/payload.json \
+  http://localhost:3000/interest-rate
+
+curl -v \
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data @src/test/resources/payload.json \
+  https://<aws-lambda-id>.execute-api.eu-central-1.amazonaws.com/Prod/interest-rate
